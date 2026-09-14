@@ -19,4 +19,4 @@ owner2 = BankAccount("Dhiraj", 150000)
 
 owner1.deposit(15000)
 owner1.withdraw(6000)
-owner1.check_balance()
+owner1.balance()
