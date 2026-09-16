@@ -4,18 +4,21 @@ class BankAccount:
         self.__balance = balance
 
     def deposit(self, amount):
-        if amount < 0:
+        if amount > 0:
             self.__balance += amount
             print(f"{amount} deposited, your current balance is {self.__balance}")
         else:
             print("Invalid deposit amount")
 
     def withdraw(self, amount):
-        if self.__balance >= amount:
-            self.__balance -= amount
-            print(f"{amount} withdrawn, your current balance is {self.__balance}")
+        if amount > 0:
+            if self.__balance >= amount:
+                       self.__balance -= amount
+                       print(f"{amount} withdrawn, your current balance is {self.__balance}")
+            else:
+                print("Insufficient balance")
         else:
-            print("Insufficient balance")
+            print("Invalid withdraw amount")
 
     def check_balance(self):
         print(f"Current balance: {self.__balance}")
