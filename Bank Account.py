@@ -28,4 +28,6 @@ account2 = BankAccount("Dhiraj", 150000)
 
 account1.deposit(15000)
 account1.withdraw(6000)
-account1.check_balance()
+balance = account1.check_balance()
+
+print("My balance is:", balance)
