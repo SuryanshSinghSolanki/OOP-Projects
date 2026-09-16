@@ -21,7 +21,7 @@ class BankAccount:
             print("Invalid withdraw amount")
 
     def check_balance(self):
-        print(f"Current balance: {self.__balance}")
+        return self.__balance
 
 account1 = BankAccount("Surya", 20000)
 account2 = BankAccount("Dhiraj", 150000)
